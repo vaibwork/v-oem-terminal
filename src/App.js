@@ -197,7 +197,8 @@ const LoginScreen = () => {
 };
 
 const Dashboard = () => {
-  const { canisters, machineStatus, config } = useContext(AppContext);
+  const { canisters, config } = useContext(AppContext); 
+  // removed machineStatus from here as it wasn't being used inside Dashboard;
   
   const stats = [
     { label: 'Canisters Active', value: canisters.length, icon: Database },
