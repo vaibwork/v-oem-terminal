@@ -1,23 +1,22 @@
-import React, { useState, useEffect, useMemo, createContext, useContext } from 'react';
+import React, { useState, createContext, useContext } from 'react';
 import { 
-  Settings, 
-  Search, 
-  Droplet, 
-  Wrench, 
-  PlusSquare, 
-  LogOut, 
-  Activity, 
-  Database, 
-  Save, 
-  RefreshCw,
-  AlertCircle,
-  CheckCircle2,
-  ChevronRight,
-  ChevronLeft,
-  Filter,
-  Download
+  Settings, 
+  Search, 
+  Droplet, 
+  Wrench, 
+  PlusSquare, 
+  LogOut, 
+  Activity, 
+  Database, 
+  Save, 
+  RefreshCw,
+  CheckCircle2,
+  Filter,
+  Download
 } from 'lucide-react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
+import { XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar } from 'recharts';
+
+
 
 // --- Context & State Management ---
 const AppContext = createContext();
